@@ -29,3 +29,13 @@ class UnauthorizedException extends AppExceptions {
   UnauthorizedException([String message = 'Unauthorized access'])
       : super(message, 'Unauthorized Exception');
 }
+
+class BadRequestException extends AppExceptions {
+  BadRequestException([String message = 'Bad request'])
+      : super(message, 'Bad Request Exception');
+}
+
+class FetchDataException extends AppExceptions {
+  FetchDataException([String message = 'Error during communication'])
+      : super(message, 'Fetch Data Exception');
+}
